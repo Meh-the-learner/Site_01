@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&family=Raleway:wght@200&display=swap');
+
+* {margin:0; border:0; padding:0;} 
+
+body{
+    min-height: 1000px;
+    border: 3px solid;
+    background-image: url(../images_folder/stars.png);
+    background-size: 150px 150px;
+
+}
+header{
+    height: 210px;
+    border: 1px solid;
+    margin: 0 75px 0 75px; 
+    display: flex;
+}
+#logo, #logo img{
+    height: 100%;
+    width: 210px;
+    background-color: #0e0e0e;
+    border-top-left-radius: 30px;
+}
+#banner{
+    height:100%;
+    width:100%;
+    background-image: url(../images_folder/banner.jpg);
+    border-top-right-radius: 40px;
+}
+nav{
+    height:40px;
+    margin: 5px 75px 0 75px;
+    text-align: center;
+    display:flex;
+}
+nav > ul{
+    height:40px;
+    flex-grow: 1;
+    display:flex;
+    background-color: #e34234;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+nav > ul > li{  
+    height: auto;
+    flex-grow:1;
+    list-style: none;
+    padding: 5px 0 0 0;
+}
+nav > ul > li > ul{
+    margin-top: 10px;
+}
+nav > ul > li > ul > li{
+    height:30px;
+    width: 170px;
+    margin: 0 auto 0 auto;
+    background-color: #b8291c;
+    display: none;
+}
+nav a{
+    width:max-content;
+    color:whitesmoke;
+    font-size:20px;
+    font-family: 'Quicksand';
+    font-weight: 300;
+    text-decoration: none;
+}
+nav > ul > #nav_left:hover{  
+    background-color:rgb(165, 165, 165);
+    border-bottom-left-radius: 10px;
+}
+nav > ul > li:hover, nav > ul > li > ul > li:hover{  
+    background-color:rgb(165, 165, 165);
+}
+nav > ul > #nav_right:hover{  
+    background-color:rgb(165, 165, 165);
+    border-bottom-right-radius: 10px;
+}
+nav > ul > li:hover > ul > li{
+    display: block;
+}
+
+
+footer{
+    height: 300px;
+    margin: 0 75px 0 75px; 
+    background-color: #0e0e0e;
+    display: flex;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+footer ul{
+    flex-grow:1;
+    padding:30px 20px 20px 20px;
+    color: whitesmoke;
+    list-style: none;
+    font-size: 10px;
+    font-family: "Raleway";
+}
+#f_logos li{
+    margin: 0 72px 0 72px;
+}
+footer img{
+    height: 70px;
+    width: 70px;
+}
+footer h1{
+    color:#e34234;
+}
+footer h3{
+    text-align: left;
+    margin-bottom: 3px;
+}
